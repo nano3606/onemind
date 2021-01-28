@@ -23,7 +23,6 @@ class User extends React.Component {
 
   handleShowMore = () => {
     const { numberOfUsers } = this.state;
-    console.log(numberOfUsers);
     this.setState({
       numberOfUsers: numberOfUsers === 10 ? 25 : 10,
       showSymbol: numberOfUsers === 10 ? "-" : "+",
